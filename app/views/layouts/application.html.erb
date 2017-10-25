@@ -10,12 +10,7 @@
 
   <body>
   <header>
-    <nav>
-      <ul>
-        <li><%= link_to 'home', home_path %></li>
-        <li><%= link_to 'about', about_path %></li>
-      </ul>
-    </nav>
+    <%= render partial: 'partials/nav' %>
   </header>
     <%= yield %>
   </body>
