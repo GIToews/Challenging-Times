@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'about_us', to: 'pages#about', as: 'about'
   get 'lizards/:number', to: 'pages#lizards', as: 'lizards'
 
+  get 'doctor_whos', to: 'doctor_whos#index', as: 'doctor_whos'
+  get 'doctor_whos/:number', to: 'doctor_whos#show', as: 'doctor_who', id: /\d+/
   # get 'pages/home'
   # get 'pages/about'
 

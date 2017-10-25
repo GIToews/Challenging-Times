@@ -1,0 +1,9 @@
+<% if isCollection then%>
+    <ul>
+      <% @doctor_whos.each do |doctor_who| %>
+          <li>Character: <%= doctor_who.character %> | Quote: <%= doctor_who.quote %></li>
+      <% end %>
+    </ul>
+<% else %>
+    <h3>Character: <%= @doctor_who.character %> | Quote: <%= @doctor_who.quote %></h3>
+<% end %>
